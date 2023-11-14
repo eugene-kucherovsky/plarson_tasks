@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 100vh;
+
+  border: 1px solid;
+  border-color: #000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  min-height: 3.125rem;
+  padding: 0.4rem;
+  background-color: #a7f3d0;
+}
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 10vh;
+}
+
+.chat__users-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.2rem;
+  width: 12.5rem;
+  padding: 0.2rem;
+  background-color: #d1fae5;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border: 1px solid;
+  border-color: #000;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 0.2rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+
+  border: 1px solid;
+  border-color: #000;
+}
+
+.user-card__img {
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.2rem;
+}
+
+.user-card__content {
+  margin-left: 0.4rem;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #d1fae5;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border: 1px solid;
+  border-color: #000;
+}
+
+.interlocutors-message {
+  max-width: 90%;
+  padding: 0.4rem 0.6rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.my-message {
+  align-self: flex-end;
+  max-width: 90%;
+  padding: 0.4rem 0.6rem;
+  background-color: #76ec9f;
+  border-radius: 0.2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  min-height: 6.25rem;
+  padding: 0.4rem;
+  background-color: #a7f3d0;
+}
+
+.dummy {
+  font-size: 0.8rem;
+}
